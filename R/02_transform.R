@@ -43,7 +43,7 @@ build_dim_date <- function(bookings) {
       year         = year(date_key),
       quarter      = quarter(date_key),
       month_num    = month(date_key),
-      month_name   = as.character(month(date_key, label = TRUE, abbr = FALSE)),
+      month_name   = month.name[month(date_key)],
       month_start  = floor_date(date_key, "month"),
       day_of_month = mday(date_key),
       iso_week     = isoweek(date_key),
