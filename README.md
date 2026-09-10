@@ -28,8 +28,8 @@ Architecture
 The data mart follows a star schema:
 
 fact_booking
-  ├── dim_property
-  └── dim_date
+|- dim_property
+|- dim_date
 
 fact_booking holds the measures and foreign keys. dim_property and dim_date carry the descriptive attributes used for filtering and grouping.
 
